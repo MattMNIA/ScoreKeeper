@@ -1,0 +1,11 @@
+module seven_seg_decoder(A, B, C, D, E, F, G, X0, X1, X2, X3);
+	input X0, X1, X2, X3;
+	output A, B, C, D, E, F, G;
+		assign A = (~X0&~X1&~X2&X3)| (~X0&X1&~X2&~X3)| (X0&X1&~X2&X3)|(X0&~X1&X2&X3);
+		assign B = (X0&X2&X3)|(X1&X2&~X3)|(X0&X1&~X3)|(~X0&X1&~X2&X3);
+		assign C = (X0&X1&X2)|(X0&X1&~X3)|(~X0&~X1&X2&~X3);
+		assign D = (X1&X2&X3)|(~X0&~X1&~X2&X3)|( ~X0&X1&~X2&~X3)|(X0&~X1&X2&~X3);
+		assign E = (~X0&X3)|(~X1&~X2&X3)|(~X0&X1&~X2);
+		assign F = (~X0&X2&X3)|(~X0&~X1&X3)|(~X0&~X1&X2)|(X0&X1&~X2&X3);
+		assign G = (~X0&~X1&~X2)|(~X0&X1&X2&X3)|( X0&X1&~X2&~X3);
+endmodule
