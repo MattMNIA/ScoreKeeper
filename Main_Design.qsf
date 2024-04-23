@@ -79,8 +79,47 @@ set_location_assignment PIN_AE18 -to Z_G
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_AD19 -to Clock
-set_location_assignment PIN_AB22 -to Player
+set_location_assignment PIN_M21 -to Clock
+set_location_assignment PIN_AD21 -to Player
 set_location_assignment PIN_AB15 -to X_E
 set_location_assignment PIN_Y2 -to Freq
+set_global_assignment -name VERILOG_FILE Y2FSM.v
+set_global_assignment -name VERILOG_FILE YFSM.v
+set_global_assignment -name VERILOG_FILE ../Lab08/mux4to1/4bit2to1mux.v
+set_global_assignment -name VERILOG_FILE ../Lab08/mux4to1/mux4bit2to1.v
+set_global_assignment -name BDF_FILE ../Lab08/mux4to1/register_file.bdf
+set_location_assignment PIN_M23 -to Show_score
+set_location_assignment PIN_V21 -to P0_winA
+set_location_assignment PIN_U21 -to P0_winB
+set_location_assignment PIN_AB20 -to P0_winC
+set_location_assignment PIN_AA21 -to P0_winD
+set_location_assignment PIN_AD24 -to P0_winE
+set_location_assignment PIN_AF23 -to P0_winF
+set_location_assignment PIN_Y19 -to P0_winG
+set_location_assignment PIN_AA25 -to P0_winA1
+set_location_assignment PIN_AA26 -to P0_winB1
+set_location_assignment PIN_Y25 -to P0_winC1
+set_location_assignment PIN_W26 -to P0_winD1
+set_location_assignment PIN_Y26 -to P0_winE1
+set_location_assignment PIN_W27 -to P0_winF1
+set_location_assignment PIN_W28 -to P0_winG1
+set_location_assignment PIN_M24 -to P1_winA
+set_location_assignment PIN_Y22 -to P1_winB
+set_location_assignment PIN_W21 -to P1_winC
+set_location_assignment PIN_W22 -to P1_winD
+set_location_assignment PIN_W25 -to P1_winE
+set_location_assignment PIN_U23 -to P1_winF
+set_location_assignment PIN_U24 -to P1_winG
+set_location_assignment PIN_G18 -to P1_winA1
+set_location_assignment PIN_F22 -to P1_winB1
+set_location_assignment PIN_E17 -to P1_winC1
+set_location_assignment PIN_L26 -to P1_winD1
+set_location_assignment PIN_L25 -to P1_winE1
+set_location_assignment PIN_J22 -to P1_winF1
+set_location_assignment PIN_H22 -to P1_winG1
+set_location_assignment PIN_E21 -to Y0
+set_location_assignment PIN_E22 -to Y1
+set_location_assignment PIN_E25 -to Y2
+set_location_assignment PIN_G22 -to T0
+set_location_assignment PIN_G21 -to T1
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

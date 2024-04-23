@@ -1,0 +1,8 @@
+module four_bit2to1mux(X,Y,Z,S);
+	input X[4:0];
+	input Y[4:0];
+	intput S;
+	output Z[4:0];
+	assign Z = S ? Y : X;
+endmodule
+	
